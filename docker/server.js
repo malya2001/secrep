@@ -4,9 +4,9 @@ var host;
 var handleRequest = function(request, response) {
   response.setHeader('Content-Type', 'text/plain');
   response.writeHead(200);
-  response.write("Hello World , este incercarea II! | Ruleaza pe :");
+  response.write("Hello,am actualizataplicatia, este incercarea II,si versiunea 2! | Ruleaza pe :");
   response.write(host);
-  response.end(" v=2\n");
+  response.end(" v=80\n");
   console.log("Running On:" , host);
 }
 var www = http.createServer(handleRequest);
